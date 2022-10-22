@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .botao {
+
+            background-color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <h1>Contas</h1>
+
+
+    <input type="number" name="" id="caixa1">
+    <input type="number" name="" id="caixa2">
+
+    <input class="botao" onclick="Somar()" type="button" value="+">
+    <input class="botao" onclick="Subtrair()" type="button" value="-">
+
+
+
+
+
+    <script>
+       let n1 = 0;
+       let n2 = 0;
+       let res = 0;
+       let caixa1 = document.getElementById('caixa1');
+       let caixa2 = document.getElementById('caixa2');
+
+       let p = document.createElement('p');
+
+       caixa1.focus()
+       
+
+
+       function Somar() {
+
+
+       n1 = Number(caixa1.value);
+       n2 = Number(caixa2.value);
+       res = n1 + n2;
+
+
+       body.appendChild(p);
+       p.innerText = 'A soma entre ' + n1 + ' e ' + n2 + ' é ' + res
+
+
+       caixa1.value = ''
+       caixa2.value = ''
+
+       caixa1.value.focus()
+       caixa2.value.facus()
+
+
+
+       }
+
+
+       function Subtrair () {
+
+
+        n1 = Number(caixa1.value);
+        n2 = Number(caixa2.value);
+        res = n1 - n2;
+
+        body.appendChild(p);
+        p.innerText = 'A subtração entre ' + n1 + ' e ' + n2 + ' é ' + res
+
+        caixa1.value = ''
+        caixa2.value = ''
+
+
+
+       }
+    </script>
+    
+</body>
+</html>

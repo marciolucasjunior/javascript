@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    
+     <h1>O quadrado de um numero</h1>
+
+
+     <input type="number" name="caixa1" id="caixa1">
+     <input type="button" value="click" onclick="somar()">
+     <div id="div"></div>
+    
+
+
+
+    <script>
+        let n = 0
+        let p = document.createElement('p');
+        let caixa1 = document.getElementById('caixa1');
+        
+        caixa1.focus();
+
+
+       
+
+        
+
+        function somar() {
+
+        n = (caixa1.value);
+        
+        caixa1.value = '';
+         
+        div.appendChild(p);
+
+        p.innerHTML +=   ' O quadrado do ' + n  + ' é ' + (n*= n) + '<br><br>'; 
+
+        caixa1.focus()
+        
+        }
+        
+    </script>
+</body>
+</html>

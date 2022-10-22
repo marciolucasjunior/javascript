@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(0, 132, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+div {
+
+    background-color: white;
+    padding: 13px;
+    width: 500px;
+   
+    margin: auto;
+}
+#res {
+    width: 400px;
+    
+}
+
+footer {
+
+    text-align: center;
+    color: white;
+}

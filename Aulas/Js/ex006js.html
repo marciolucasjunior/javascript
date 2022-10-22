@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+
+        div#area {
+            font: normal 20px arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Eventos DOMS</h1> 
+   <div id="area">
+       Intereja.....
+
+   </div>
+   
+   <script>
+   //evento dom é oque pode acontecer com o elemento, bloco é colocado entre { }
+   
+
+
+    var div = document.getElementById('area')
+
+    div.addEventListener('click',clicar)
+    div.addEventListener('mouseenter',entrar)
+    div.addEventListener('mouseout',sair)
+
+
+
+    function clicar() {
+      
+      div.innerText = 'Clicou!'
+      div.style.background = 'red'   
+    }
+
+    function entrar() {
+
+        div.innerText = 'Entrou'
+    }
+    
+    function sair() {
+        div.innerText = 'Saiu!'
+    }
+   </script>
+
+</body>
+</html>

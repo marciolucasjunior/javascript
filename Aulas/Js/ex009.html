@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Em qual país você mora?</h1>
+    
+
+    <p> Digite o nome do seu país <input type="text" name="paiss" id="paiss">
+    <input type="button" value="Enviar" onclick="verpais()">
+    <div id="res"></div>
+
+
+    <script>
+        
+        function verpais() {
+            
+            
+         var paiis = document.getElementById('paiss')
+            var ress = document.getElementById('res')
+            var p1 = (paiis.value)
+
+            if (p1 != 'brasil')  {
+            ress.innerHTML = 'Estrangeiro'
+        } else {
+
+            ress.innerHTML += 'Você é brasileiro'
+        }
+          
+
+        }
+
+          
+       
+        
+
+        
+        
+    
+
+    </script>
+</body>
+</html>

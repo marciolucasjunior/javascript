@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color: rgb(240, 188, 233);
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 20px ;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+
+    <p>Apredendo a usar o  <strong>DOM</strong> em javascript.</p>
+
+    <div id="msg">Clique em mim  </div>
+     
+
+    <script>
+         
+    var corpo = window.document.body
+    corpo.style.background = 'black'
+ 
+    var p50 = window.document.getElementsByTagName('p')[1] 
+    //O primeiro p começa no [0]...criei uma variavel que vai substituir a tag p original
+    p50.style.background = 'yellow'
+   
+    
+    window.document.write('Esta escrito assim:' +p50.innerText) //innerText mostra o conteudo da tag p na tela escrito
+
+    window.document.write(document.charset)  //mostra URL do site e também pode mostrar , outras coisas do site como os caracteres usando o carset
+
+
+  
+    p50.style.color = 'blue'
+    
+    window.document.write(p50.innerHTML)//Pega o texto junto com as tag no caso o strong
+
+   
+
+    var d = window.document.getElementById('msg')
+    d.style.background = 'green'//Nescessário criar a variavel para poder mecher na tag desejada no caso aqui a div pelo menos por enquanto no inicio do curso
+
+    var d = window.document.querySelector('div#msg')//Metodo mais recente para acessar e modificar a tag desejada. "selecionar elementos"
+    d.style.background = 'blue'
+    </script>
+
+  
+  
+
+</body>
+</html>

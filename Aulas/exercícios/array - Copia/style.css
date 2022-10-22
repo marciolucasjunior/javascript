@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(0, 132, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+div {
+
+    background-color: white;
+    padding: 13px;
+    width: 500px;
+   
+    margin: auto;
+}
+#res {
+    width: 500px;
+    
+}
+
+#caixa2 {
+
+    width: 150px;
+}
+
+
+#cor {
+    width: 150px;
+
+    background-color: rgb(119, 180, 250);
+}
+
+
+
+footer {
+
+    text-align: center;
+    color: white;
+}
